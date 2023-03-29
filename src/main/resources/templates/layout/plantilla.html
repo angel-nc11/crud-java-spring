@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaft.org">
+    <head>
+        <title>Plantilla</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <header th:fragment="header">
+            <h1 th:text="#{plantilla.titulo}">titulo</h1>
+        </header>
+        <footer th:fragment="footer">
+            <div>
+                <br/>
+                <a th:href="@{/(lang=es)}">ES</a> | 
+                <a th:href="@{/(lang=en)}">EN</a> |
+                <span> [[#{plantilla.pie-pagina}]] <b>Angel Najarro</b> </span>
+            </div>
+           
+        </footer>
+    </body>
+</html>
